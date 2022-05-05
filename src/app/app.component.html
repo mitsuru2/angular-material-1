@@ -1,7 +1,31 @@
-<h1>{{ title }}</h1>
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{ title }}</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
 
 <section>
-  <div>Buttons</div>
+  <h2>Buttons</h2>
   <div>
     <button mat-button color="primary" (click)="onClick('Basic')">
       Basic Button
@@ -26,7 +50,7 @@
 <mat-divider></mat-divider>
 
 <section>
-  <div>Slider</div>
+  <h2>Slider</h2>
   <div>
     <mat-slider
       thumbLabel
@@ -43,7 +67,7 @@
 <mat-divider></mat-divider>
 
 <section>
-  <div>Form</div>
+  <h2>Form</h2>
   <div>
     <mat-form-field appearance="fill">
       <mat-label>Enter your email</mat-label>
@@ -81,3 +105,5 @@
   <div>Email: {{ input_email }}</div>
   <div>Password: {{ input_password }}</div>
 </section>
+
+<mat-divider></mat-divider>
